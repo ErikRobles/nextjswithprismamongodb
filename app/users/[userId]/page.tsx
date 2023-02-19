@@ -7,7 +7,8 @@ type Props = {
 }
 
 const Page = async ({ params }: Props) => {
-  const { user } = await getUserById(params.userId)
+  const user = await getUserById(params.userId)
+
   return <User user={user} />
 }
 

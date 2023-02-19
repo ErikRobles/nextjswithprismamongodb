@@ -30,8 +30,12 @@ const User = ({ user }: any) => {
             </span>
           )}
         </div>
-        <h1 className="text-xl font-bold">{user?.name}</h1>
-        <p className="text-sm text-stone-400">{user?.email}</p>
+        <h1 className="text-xl font-bold">
+          {user?.name ? user?.name : "Nothing to see here."}
+        </h1>
+        <p className="text-sm text-stone-400">
+          {user?.email ? user?.email : "No email found"}
+        </p>
       </div>
     </section>
   )
