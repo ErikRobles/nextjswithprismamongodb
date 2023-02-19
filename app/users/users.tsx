@@ -2,7 +2,7 @@ import React from "react"
 import { getUsers } from "@/lib/prisma/users"
 import Link from "next/link"
 
-const Users = async () => {
+const Users: any = async () => {
   const { users } = await getUsers()
   return (
     <section className="fixed h-full w-1/4 bg-stone-800">
