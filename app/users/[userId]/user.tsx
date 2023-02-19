@@ -5,7 +5,7 @@ const User = ({ user }: any) => {
   const image = (
     <Image
       src={user?.imageUrl}
-      alt={user?.name}
+      alt={`${user?.name}'s profile picture`}
       width={150}
       height={150}
       style={{ objectFit: "cover" }}
